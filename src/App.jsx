@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <div>My CI/CD test app deployed to netlify...</div>
+      <h1>Trigger</h1>
     </>
   );
 }
