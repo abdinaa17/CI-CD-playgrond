@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div>My CI/CD test app</div>
+      <div>My CI/CD test app deployed to netlify...</div>
     </>
   );
 }
