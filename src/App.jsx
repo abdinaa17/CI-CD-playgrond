@@ -10,6 +10,7 @@ function App() {
     <>
       <div>My CI/CD test app deployed to netlify...</div>
       <h1>Trigger</h1>
+      <h2>Another Trigger</h2>
     </>
   );
 }

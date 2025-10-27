@@ -1,4 +1,4 @@
-name: Deploy react app to netlify
+name: Deploy react app to netlify using github actions
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Retrieve the latest main branch
         uses: actions/checkout@v4
 
       - name: Set up nodejs
@@ -21,7 +21,7 @@ jobs:
       - name: Install depenencies
         run: npm ci
 
-      - name: Build project
+      - name: Build the code found in the branch
         run: npm run build
 
       - name: Deploy to netlify
